@@ -19,7 +19,7 @@ local DISCORD_EMOTES = {
 	["Ultra Lucky"] = "<:e:1082130805914079313>"
 }
 
-if not WEBHOOK_URL or WEBHOOK_URL == "" then
+if WEBHOOK_URL == "" then
 	game.Players.LocalPlayer:Kick("Give webhook!")
 	  return end
 
