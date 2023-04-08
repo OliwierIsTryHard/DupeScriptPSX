@@ -19,7 +19,7 @@ local DISCORD_EMOTES = {
 	["Ultra Lucky"] = "<:e:1082130805914079313>"
 }
 
-if WEBHOOK_URL == "" then
+if getgenv().WEBHOOK_URL == "" then
 	game.Players.LocalPlayer:Kick("Give webhook!")
 	  return end
 
@@ -67,7 +67,7 @@ function SendWebhookInfo(quantity, loots)
 		}
 		
 	(syn and syn.request or http_request or http.request) {
-		Url = WEBHOOK_URL;
+		Url = getgenv().WEBHOOK_URL;
 		Method = 'POST';
 		Headers = {
 			['Content-Type'] = 'application/json';
