@@ -101,9 +101,9 @@ local COIN_EMOTE = "<:e:1087199766401794168>"
 local PET_EMOTE = "<:e:1083222082533462098>"
 function SendWebhookInfo(quantity, loots)
 
-	local gamemode = "[NORMAL]"
+	local gamemode = "Gamemode: NORMAL"
 	if Library.Shared.IsHardcore then 
-		gamemode = "[HARDCORE]"
+		gamemode = "Gamemode: HARDCORE"
 	end
 	
 	local lootString = ""
